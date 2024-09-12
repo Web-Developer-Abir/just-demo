@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object reference not set to an instance of an object.</title>
+        <meta name="viewport" content="width=device-width" />
+        <style>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Consolas","Lucida Console",Monospace;font-size:11pt;margin:0;padding:0.5em;line-height:14pt}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
+         @media screen and (max-width: 639px) {
+          pre { width: 440px; overflow: auto; white-space: pre-wrap; word-wrap: break-word; }
+         }
+         @media screen and (max-width: 479px) {
+          pre { width: 280px; }
+         }
+        </style>
+    </head>
+
+    <body bgcolor="white">
+
+            <span><H1>Server Error in '/' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>Object reference not set to an instance of an object.</i> </h2></span>
+
+            <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+            <b> Description: </b>An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.
+
+            <br><br>
+
+            <b> Exception Details: </b>System.NullReferenceException: Object reference not set to an instance of an object.<br><br>
+
+            <b>Source Error:</b> <br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code>
+
+An unhandled exception was generated during the execution of the current web request. Information regarding the origin and location of the exception can be identified using the exception stack trace below.</code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <b>Stack Trace:</b> <br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+[NullReferenceException: Object reference not set to an instance of an object.]
+   StarTours.Site.Helpers.VertoControllerBase.SetResponseTourMetaData(Tour page) in C:\Users\Alex.Porter\source\repos\startours.co.uk_2023\StarTours.Site\Helpers\Common\VertoControllerBase.cs:141
+   StarTours.Site.Controllers.&lt;Index&gt;d__1.MoveNext() in C:\Users\Alex.Porter\source\repos\startours.co.uk_2023\StarTours.Site\Controllers\TourController.cs:48
+   System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() +31
+   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +60
+   System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult) +92
+   System.Web.Mvc.Async.&lt;&gt;c__DisplayClass8_0.&lt;BeginInvokeAsynchronousActionMethod&gt;b__1(IAsyncResult asyncResult) +22
+   System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult) +42
+   System.Web.Mvc.Async.&lt;&gt;c__DisplayClass11_0.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__0() +80
+   System.Web.Mvc.Async.&lt;&gt;c__DisplayClass11_2.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__2() +387
+   System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult) +42
+   System.Web.Mvc.Async.&lt;&gt;c__DisplayClass3_6.&lt;BeginInvokeAction&gt;b__4() +50
+   System.Web.Mvc.Async.&lt;&gt;c__DisplayClass3_1.&lt;BeginInvokeAction&gt;b__1(IAsyncResult asyncResult) +188
+   System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult) +38
+   System.Web.Mvc.&lt;&gt;c.&lt;BeginExecuteCore&gt;b__152_1(IAsyncResult asyncResult, ExecuteCoreState innerState) +26
+   System.Web.Mvc.Async.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult) +73
+   System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult) +52
+   System.Web.Mvc.Async.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult) +39
+   System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult) +38
+   System.Web.Mvc.&lt;&gt;c.&lt;BeginProcessRequest&gt;b__20_1(IAsyncResult asyncResult, ProcessRequestState innerState) +40
+   System.Web.Mvc.Async.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult) +73
+   System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult) +38
+   System.Web.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute() +648
+   System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step) +213
+   System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously) +131
+</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <hr width=100% size=1 color=silver>
+
+            <b>Version Information:</b>&nbsp;Microsoft .NET Framework Version:4.0.30319; ASP.NET Version:4.7.4092.0
+
+            </font>
+
+    </body>
+</html>
+<!-- 
+[NullReferenceException]: Object reference not set to an instance of an object.
+   at StarTours.Site.Helpers.VertoControllerBase.SetResponseTourMetaData(Tour page) in C:\Users\Alex.Porter\source\repos\startours.co.uk_2023\StarTours.Site\Helpers\Common\VertoControllerBase.cs:line 141
+   at StarTours.Site.Controllers.TourController.<Index>d__1.MoveNext() in C:\Users\Alex.Porter\source\repos\startours.co.uk_2023\StarTours.Site\Controllers\TourController.cs:line 48
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass8_0.<BeginInvokeAsynchronousActionMethod>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<>c.<BeginExecuteCore>b__152_1(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c.<BeginProcessRequest>b__20_1(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--><!-- 
+This error page might contain sensitive information because ASP.NET is configured to show verbose error messages using &lt;customErrors mode="Off"/&gt;. Consider using &lt;customErrors mode="On"/&gt; or &lt;customErrors mode="RemoteOnly"/&gt; in production environments.-->
